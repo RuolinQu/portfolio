@@ -1,0 +1,59 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    height: 60px;
+    background-color: rgb(250, 250, 250);
+    .selected {
+      color: #333 !important;
+      padding-bottom: 5px;
+      border-bottom: 1.5px solid #333;
+    }
+    .header_nav {
+      width: 70%;
+      height: 100%;
+      margin: 0px auto;
+      padding: 0px 12px;
+      border: 1px solid red;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .navleft {
+        font-size: 20px;
+        color: rgb(51, 51, 51);
+      }
+
+      .navright {
+        display: flex;
+        justify-content: space-between;
+        p {
+          color: rgb(51, 51, 51);
+          margin: 0px 10px;
+          font-size: 14px;
+          color: rgb(102, 102, 102);
+        }
+      }
+    }
+  }
+  .content {
+    flex: 1;
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+    padding: 50px 0px;
+    background: #fafafa;
+    color: #555;
+    p {
+      padding: 2px 0px;
+    }
+  }
+}
